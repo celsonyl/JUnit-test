@@ -1,0 +1,33 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Çµí‘
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(€›¯Ì
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(‡›¢ö
+N	java:S106("9Replace this use of System.out or System.err by a logger.(…º½ñ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(²„øÈ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(Ÿ¡ÒÏ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(¤ÓÁÕ
+N	java:S106>"9Replace this use of System.out or System.err by a logger.(€›¯Ì
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(ÌÎ´®
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(…º½ñ
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(€›¯Ì
+N	java:S106T"9Replace this use of System.out or System.err by a logger.(õ¥Ô„
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(…º½ñ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(ƒÃÎÅşÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106d"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106q"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
+N	java:S106y"9Replace this use of System.out or System.err by a logger.(½«óÓ
+N	java:S106z"9Replace this use of System.out or System.err by a logger.(Ë§¶Ç
+S	java:S106{"9Replace this use of System.out or System.err by a logger.(µ¸üüüÿÿÿÿ
+S	java:S106|"9Replace this use of System.out or System.err by a logger.(¦¤šşÿÿÿÿ
+N	java:S106}"9Replace this use of System.out or System.err by a logger.(ù¡Ù
+S	java:S106~"9Replace this use of System.out or System.err by a logger.(é»©²ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+o
+java:S1192!"YDefine a constant instead of duplicating this literal "Digite o ID do cliente: " 3 times.(€›¯Ì
+o
+java:S1192("YDefine a constant instead of duplicating this literal "Cliente nÃ£o encontrado!" 3 times.(…º½ñ
