@@ -1,12 +1,16 @@
 import com.celso.domain.Cliente;
 import com.celso.domain.GerenciadoraClientes;
+import com.celso.domain.exceptions.IdadeNaoPermitidaException;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import static org.junit.Assert.fail;
 
 public class GerenciadoraClientesTest {
     private GerenciadoraClientes gerenciadoraClientes;
@@ -35,6 +39,12 @@ public class GerenciadoraClientesTest {
     }
 
     @Test
+    public void testPesquisaClienteInexistente() {
+        Cliente cliente = gerenciadoraClientes.pesquisaCliente(21);
+        assert (cliente == null);
+    }
+
+    @Test
     public void testRemoveCliente() {
         //=== Executando o metodo
         boolean removeCliente = gerenciadoraClientes.removeCliente(2);
@@ -42,5 +52,15 @@ public class GerenciadoraClientesTest {
         //===== Testando
         assert (removeCliente);
         assert (gerenciadoraClientes.pesquisaCliente(2) == null);
+    }
+
+    @Test
+    public void testRemoveClienteInexistente() {
+        //=== Executando o metodo
+        boolean removeCliente = gerenciadoraClientes.removeCliente(20);
+
+        //===== Testando
+        assert (!removeCliente);
+        assert (gerenciadoraClientes.pesquisaCliente(20) == null);
     }
 }

@@ -1,5 +1,7 @@
 package com.celso.domain;
 
+import com.celso.domain.exceptions.IdadeNaoPermitidaException;
+
 import java.util.List;
 
 public class GerenciadoraClientes {
@@ -61,5 +63,12 @@ public class GerenciadoraClientes {
         }
 
         return clienteRemovido;
+    }
+
+    public boolean validaIdade(int idade) throws IdadeNaoPermitidaException {
+        if (idade < 18 || idade > 65)
+            throw new IdadeNaoPermitidaException("Idade não permitida");
+
+        return true;
     }
 }
