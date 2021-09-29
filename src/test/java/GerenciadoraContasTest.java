@@ -46,8 +46,50 @@ public class GerenciadoraContasTest {
         var sucess = gerenciadoraContas.transfereValor(2, 100, 1);
 
         //Testando
-        assert (!sucess);
-        assert (c1.getSaldo() == 100);
+        assert (sucess);
+        assert (c1.getSaldo() == 200);
+        assert (c2.getSaldo() == -50);
+    }
+
+    @Test
+    public void testTransfereValorSaldoNegativo() {
+        //Cenario
+        ContaCorrente c1 = new ContaCorrente(1, -100, true);
+        ContaCorrente c2 = new ContaCorrente(2, 50, true);
+
+        List<ContaCorrente> list = new ArrayList<>();
+        list.add(c1);
+        list.add(c2);
+
+        GerenciadoraContas gerenciadoraContas = new GerenciadoraContas(list);
+
+        //Executa o metodo
+        var sucess = gerenciadoraContas.transfereValor(1, 200, 2);
+
+        //Testando
+        assert (sucess);
+        assert (c1.getSaldo() == -300);
+        assert (c2.getSaldo() == 250);
+    }
+
+    @Test
+    public void testTransfereValorNenhum() {
+        //Cenario
+        ContaCorrente c1 = new ContaCorrente(1, -100, true);
+        ContaCorrente c2 = new ContaCorrente(2, 50, true);
+
+        List<ContaCorrente> list = new ArrayList<>();
+        list.add(c1);
+        list.add(c2);
+
+        GerenciadoraContas gerenciadoraContas = new GerenciadoraContas(list);
+
+        //Executa o metodo
+        var sucess = gerenciadoraContas.transfereValor(1, 0, 2);
+
+        //Testando
+        assert (sucess);
+        assert (c1.getSaldo() == -100);
         assert (c2.getSaldo() == 50);
     }
 }

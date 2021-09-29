@@ -19,7 +19,7 @@ public class GerenciadoraClientesTest {
     public void setUp() {
         //Montando cenario
         Cliente c1 = new Cliente(1, "Celso", 20, "celso@hotmail.com", 1, true);
-        Cliente c2 = new Cliente(2, "Garrafa", 10, "celso@hotmail.com", 1, true);
+        Cliente c2 = new Cliente(2, "Garrafa", 18, "celso@hotmail.com", 1, true);
 
         List<Cliente> list = new ArrayList<>();
         list.add(c1);
